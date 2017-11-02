@@ -12,9 +12,16 @@ import android.widget.Button;
 
 import com.example.christian.socketpowerandroid.R;
 
+import model.Client;
+import model.FormatConversion;
+import model.RESTClient;
+
 public class PowerstripGUI extends AppCompatActivity {
 
     Context context;
+    RESTClient restClient;
+    Client client;
+    FormatConversion fc;
 
 
     @Override
@@ -22,6 +29,10 @@ public class PowerstripGUI extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         context = PowerstripGUI.this;
         setContentView(R.layout.powerstrip_control);
+
+        fc = new FormatConversion();
+
+        //Client client = fc.convertJsonToClient();
 
 
         Button button1;
@@ -53,6 +64,9 @@ public class PowerstripGUI extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("PowerStrip2", "Pressed here");
+
+
+
             }
         });
 

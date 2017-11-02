@@ -3,6 +3,8 @@ package activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -21,7 +23,6 @@ public class PowerstripGUI extends AppCompatActivity {
         setContentView(R.layout.powerstrip_control);
 
 
-
         Button button1;
         Button button2;
         Button button3;
@@ -29,12 +30,12 @@ public class PowerstripGUI extends AppCompatActivity {
         Button button5;
         Button button6;
 
-        button1 = (Button) findViewById(R.id.toggleButton1);
-        button2 = (Button) findViewById(R.id.toggleButton2);
-        button3 = (Button) findViewById(R.id.toggleButton3);
-        button4 = (Button) findViewById(R.id.toggleButton4);
-        button5 = (Button) findViewById(R.id.toggleButton5);
-        button6 = (Button) findViewById(R.id.toggleButton6);
+        button1 = findViewById(R.id.toggleButton1);
+        button2 = findViewById(R.id.toggleButton2);
+        button3 = findViewById(R.id.toggleButton3);
+        button4 = findViewById(R.id.toggleButton4);
+        button5 = findViewById(R.id.toggleButton5);
+        button6 = findViewById(R.id.toggleButton6);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +80,14 @@ public class PowerstripGUI extends AppCompatActivity {
             }
         });
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Hello Brannon", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
 
     }
 

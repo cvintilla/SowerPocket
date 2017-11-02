@@ -2,6 +2,7 @@ package activity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -58,9 +59,13 @@ public class LoginGUI extends AppCompatActivity implements View.OnClickListener{
             //username and password validation
             if (whatComesIn() == -2) {
                 //error
+                Snackbar.make(v, "ERROR #671", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
 
             } else if (whatComesIn() == -1) {
                 //invalid login
+                Snackbar.make(v, "Invalid Login", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
 
             } else if (whatComesIn() == 1) {
                 Log.v("TEXT TO GIO IS: ", getUserText());

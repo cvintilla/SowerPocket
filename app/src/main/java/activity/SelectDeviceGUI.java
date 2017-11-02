@@ -26,7 +26,7 @@ public class SelectDeviceGUI extends AppCompatActivity implements View.OnClickLi
     }
 
     public void initializeViews() {
-        Button login_button = (Button) findViewById(R.id.button3);
+        Button login_button = findViewById(R.id.button3);
         login_button.setOnClickListener(this);
 
     }

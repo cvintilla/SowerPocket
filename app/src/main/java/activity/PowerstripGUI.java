@@ -16,6 +16,7 @@ public class PowerstripGUI extends AppCompatActivity {
 
     Context context;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,9 @@ public class PowerstripGUI extends AppCompatActivity {
             public void onClick(View view) {
 
                 Log.d("PowerStrip1", "Pressed here");
+
+
+
             }
         });
 

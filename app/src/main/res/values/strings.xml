@@ -3,4 +3,46 @@
     <string name="action_sign_in">Sign In</string>
     <string name="hidden_username_text">Username</string>
     <string name="hidden_password_text">Password</string>
+
+    <string name="title">Sockets</string>
+    <string name="tog1">ON</string>
+    <string name="tog2">ON</string>
+    <string name="tog3">ON</string>
+    <string name="tog4">ON</string>
+    <string name="tog5">ON</string>
+    <string name="tog6">ON</string>
+
+    <string name="togo1">OFF</string>
+    <string name="togo2">OFF</string>
+    <string name="togo3">OFF</string>
+    <string name="togo4">OFF</string>
+    <string name="togo5">OFF</string>
+    <string name="togo6">OFF</string>
+
+    <string name="one">"1"</string>
+    <string name="two">"2"</string>
+    <string name="three">"3"</string>
+    <string name="four">"4"</string>
+    <string name="five">"5"</string>
+    <string name="six">"6"</string>
+    <string name="loginbutton">Log In</string>
+
+    <!-- Strings related to login -->
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="titledevice">Select Device</string>
+    <string name="back">Back</string>
+    <string name="getDevice">Device 1</string>
+    <string name="device1">Device 1</string>
+    <string name="select_device_pic"/>
+    <string name="select_device_header"/>
+    <string name="select_dev_img"/>
+    <string name="login_header">Welcome To Smart Power</string>
 </resources>

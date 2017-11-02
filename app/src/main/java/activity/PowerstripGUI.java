@@ -32,7 +32,7 @@ public class PowerstripGUI extends AppCompatActivity {
 
         fc = new FormatConversion();
 
-        //Client client = fc.convertJsonToClient();
+        //Client client = fc.convertJsonToClient(getString(R.id.));
 
 
         Button button1;

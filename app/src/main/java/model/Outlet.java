@@ -31,6 +31,7 @@ public class Outlet {
     }
 
     public void setDevice_id(String device_id) {
+
         this.device_id = device_id;
     }
 

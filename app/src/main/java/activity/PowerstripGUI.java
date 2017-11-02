@@ -9,11 +9,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.ToggleButton;
 
 import com.example.christian.socketpowerandroid.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import model.Client;
 import model.FormatConversion;
+import model.Outlet;
 import model.RESTClient;
 
 public class PowerstripGUI extends AppCompatActivity {
@@ -22,6 +28,7 @@ public class PowerstripGUI extends AppCompatActivity {
     RESTClient restClient;
     Client client;
     FormatConversion fc;
+    List<Outlet> outlets;
 
 
     @Override
@@ -32,15 +39,18 @@ public class PowerstripGUI extends AppCompatActivity {
 
         fc = new FormatConversion();
 
-        //Client client = fc.convertJsonToClient(getString(R.id.));
+        Client client = fc.convertJsonToClient(getString(R.string.sampleClient));
+
+        outlets = client.getDevices().get(0).getOutlets();
 
 
-        Button button1;
-        Button button2;
-        Button button3;
-        Button button4;
-        Button button5;
-        Button button6;
+
+        ToggleButton button1;
+        ToggleButton button2;
+        ToggleButton button3;
+        ToggleButton button4;
+        ToggleButton button5;
+        ToggleButton button6;
 
         button1 = findViewById(R.id.toggleButton1);
         button2 = findViewById(R.id.toggleButton2);
@@ -49,14 +59,17 @@ public class PowerstripGUI extends AppCompatActivity {
         button5 = findViewById(R.id.toggleButton5);
         button6 = findViewById(R.id.toggleButton6);
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Log.d("PowerStrip1", "Pressed here");
-
-
-
+        button1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Outlet outlet = outlets.get(0);
+                if (isChecked) {
+                    outlet.setOutlet_status(true);
+                    Outlet outletConfirm = restClient.outletToggle(outlet);
+                    outlets.set(0, outlet);
+                } else {
+                    outlet.setOutlet_status(false);
+                    Outlet outletConfirm = restClient.outletToggle(outlet);
+                    outlets.set(0, outlet);                }
             }
         });
 

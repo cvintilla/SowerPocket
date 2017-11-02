@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2ed1b9</color>
-    <color name="colorPrimaryDark">#3F77D5</color>
-    <color name="colorAccent">#2ed1b9</color>
-    <color name="micColor">#cdd376</color>
+    <color name="colorPrimary">#ffee38</color>
+    <color name="colorAccent">#670bdb</color>
+    <color name="colorPrimaryDark">#2ed1b9</color>
+    <color name="micColor">#FFEE38</color>
 </resources>

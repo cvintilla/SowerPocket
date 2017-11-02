@@ -1,7 +1,9 @@
-package com.example.christian.socketpowerandroid;
+package activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.christian.socketpowerandroid.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.example.christian.socketpowerandroid.R;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginGUI extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

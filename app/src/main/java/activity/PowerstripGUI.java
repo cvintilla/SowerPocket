@@ -8,27 +8,20 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
 import com.example.christian.socketpowerandroid.R;
 
-import java.util.ArrayList;
 import java.util.List;
-
-import model.Client;
-import model.FormatConversion;
-import model.Outlet;
-import model.RESTClient;
 
 public class PowerstripGUI extends AppCompatActivity {
 
     Context context;
-    RESTClient restClient;
-    Client client;
-    FormatConversion fc;
-    List<Outlet> outlets;
+//    RESTClient restClient;
+//    Client client;
+//    FormatConversion fc;
+//    List<Outlet> outlets;
 
 
     @Override
@@ -37,11 +30,11 @@ public class PowerstripGUI extends AppCompatActivity {
         context = PowerstripGUI.this;
         setContentView(R.layout.powerstrip_control);
 
-        fc = new FormatConversion();
-
-        Client client = fc.convertJsonToClient(getString(R.string.sampleClient));
-
-        outlets = client.getDevices().get(0).getOutlets();
+//        fc = new FormatConversion();
+//
+//        Client client = fc.convertJsonToClient(getString(R.string.sampleClient));
+//
+//        outlets = client.getDevices().get(0).getOutlets();
 
 
 
@@ -61,15 +54,15 @@ public class PowerstripGUI extends AppCompatActivity {
 
         button1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Outlet outlet = outlets.get(0);
-                if (isChecked) {
-                    outlet.setOutlet_status(true);
-                    Outlet outletConfirm = restClient.outletToggle(outlet);
-                    outlets.set(0, outlet);
-                } else {
-                    outlet.setOutlet_status(false);
-                    Outlet outletConfirm = restClient.outletToggle(outlet);
-                    outlets.set(0, outlet);                }
+//                Outlet outlet = outlets.get(0);
+//                if (isChecked) {
+//                    outlet.setOutlet_status(true);
+//                    Outlet outletConfirm = restClient.outletToggle(outlet);
+//                    outlets.set(0, outlet);
+//                } else {
+//                    outlet.setOutlet_status(false);
+//                    Outlet outletConfirm = restClient.outletToggle(outlet);
+//                    outlets.set(0, outlet);                }
             }
         });
 

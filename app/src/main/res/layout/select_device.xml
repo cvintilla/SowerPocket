@@ -27,25 +27,38 @@
         android:textColor="@color/colorAccent"
         android:textSize="36sp"/>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="@android:dimen/thumbnail_height"
 
-        android:contentDescription="@string/select_dev_img"/>
-    //app:srcCompat="@drawable/diamond_image"/>
+        android:contentDescription="@string/select_dev_img"
+        app:srcCompat="@android:drawable/editbox_background_normal"/>
 
-    <ScrollView
+
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="378dp">
+        android:layout_height="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/getDevice"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="button1"
+            android:textColor="@color/colorAccent"
             tools:text="@string/device1"/>
 
-    </ScrollView>
+    </LinearLayout>
 
 </LinearLayout>

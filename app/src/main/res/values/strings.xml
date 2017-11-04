@@ -39,8 +39,10 @@
     </string>
     <string name="titledevice">Select Device</string>
     <string name="back">Back</string>
-    <string name="getDevice">Device 1</string>
     <string name="device1">Device 1</string>
+    <string name="device2">Device 2</string>
+    <string name="device3">Device 3</string>
+    <string name="device4">Device 4</string>
     <string name="select_device_pic"/>
     <string name="select_device_header"/>
     <string name="select_dev_img"/>

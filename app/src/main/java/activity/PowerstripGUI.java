@@ -15,6 +15,8 @@ import com.example.christian.socketpowerandroid.R;
 
 import java.util.List;
 
+import model.Outlet;
+
 public class PowerstripGUI extends AppCompatActivity {
 
     Context context;
@@ -37,20 +39,12 @@ public class PowerstripGUI extends AppCompatActivity {
 //        outlets = client.getDevices().get(0).getOutlets();
 
 
-
-        ToggleButton button1;
-        ToggleButton button2;
-        ToggleButton button3;
-        ToggleButton button4;
-        ToggleButton button5;
-        ToggleButton button6;
-
-        button1 = findViewById(R.id.toggleButton1);
-        button2 = findViewById(R.id.toggleButton2);
-        button3 = findViewById(R.id.toggleButton3);
-        button4 = findViewById(R.id.toggleButton4);
-        button5 = findViewById(R.id.toggleButton5);
-        button6 = findViewById(R.id.toggleButton6);
+        ToggleButton button1 = findViewById(R.id.toggleButton1);
+        ToggleButton button2 = findViewById(R.id.toggleButton2);
+        ToggleButton button3 = findViewById(R.id.toggleButton3);
+        ToggleButton button4 = findViewById(R.id.toggleButton4);
+        ToggleButton button5 = findViewById(R.id.toggleButton5);
+        ToggleButton button6 = findViewById(R.id.toggleButton6);
 
         button1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

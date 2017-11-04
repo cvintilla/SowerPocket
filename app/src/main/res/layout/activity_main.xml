@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     android:orientation="vertical"
     tools:context="activity.LoginGUI">
 
@@ -22,7 +23,12 @@
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            app:srcCompat="@android:drawable/btn_star_big_on"/>
+            android:background="@color/colorPrimary"
+            app:srcCompat="@android:drawable/editbox_background_normal"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -50,12 +56,13 @@
         <Button
             android:id="@+id/email_sign_in_button"
             style="?android:textAppearanceSmall"
-            android:layout_width="223dp"
+            android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|center_horizontal"
             android:layout_marginTop="16dp"
             android:text="@string/action_sign_in_short"
             android:textAlignment="center"
+            android:textColor="@color/colorAccent"
             android:textStyle="bold"/>
 
     </LinearLayout>

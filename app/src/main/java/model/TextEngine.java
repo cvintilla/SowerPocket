@@ -108,11 +108,11 @@ public class TextEngine {
 
             } else if (command.contains("5") || command.contains("FIVE")) {
                 client.outletToggleDirect(true, "5");
-                mySwitchList.get(5).setChecked(true);
+                mySwitchList.get(4).setChecked(true);
 
             } else if (command.contains("6") || command.contains("SIX")) {
                 client.outletToggleDirect(true, "6");
-                mySwitchList.get(6).setChecked(true);
+                mySwitchList.get(5).setChecked(true);
 
             } else {
 
@@ -147,7 +147,7 @@ public class TextEngine {
 
             } else if (command.contains("6") || command.contains("SIX")) {
                 client.outletToggleDirect(false, "6");
-                mySwitchList.get(6).setChecked(false);
+                mySwitchList.get(5).setChecked(false);
 
 
             } else {

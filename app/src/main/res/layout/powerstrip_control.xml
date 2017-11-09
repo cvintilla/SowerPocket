@@ -16,7 +16,7 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
@@ -25,7 +25,7 @@
         android:layout_marginEnd="18dp"
         android:layout_marginRight="18dp"
         app:backgroundTint="@color/colorPrimary"
-        app:srcCompat="@android:drawable/presence_audio_away"/>
+        app:srcCompat="@mipmap/ai_mic"/>
 
     <TextView
         android:id="@+id/textView"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="22dp"
         android:text="@string/title"
         android:textColor="@color/colorAccent"
         android:textSize="36sp"/>
@@ -59,17 +59,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:text="@string/one"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
 
-            <ToggleButton
-                android:id="@+id/toggleButton1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:text="@string/tog1"
-                android:textColorLink="@color/colorPrimary"
-                android:textOff="@string/togo1"
-                android:textOn="@string/tog1"/>
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="75dp"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:switchMinWidth="60dp"/>
 
         </LinearLayout>
 
@@ -86,17 +83,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:text="@string/two"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
 
-            <ToggleButton
-                android:id="@+id/toggleButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:text="@string/tog2"
-                android:textColorLink="@color/colorPrimary"
-                android:textOff="@string/togo2"
-                android:textOn="@string/tog2"/>
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="75dp"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:switchMinWidth="60dp"/>
 
         </LinearLayout>
 
@@ -113,17 +107,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:text="@string/three"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
 
-            <ToggleButton
-                android:id="@+id/toggleButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:text="@string/tog3"
-                android:textColorLink="@color/colorPrimary"
-                android:textOff="@string/togo3"
-                android:textOn="@string/tog3"/>
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="75dp"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:switchMinWidth="60dp"/>
 
         </LinearLayout>
 
@@ -140,17 +131,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:text="@string/four"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
 
-            <ToggleButton
-                android:id="@+id/toggleButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:text="@string/tog4"
-                android:textColorLink="@color/colorPrimary"
-                android:textOff="@string/togo4"
-                android:textOn="@string/tog4"/>
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="75dp"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:switchMinWidth="60dp"/>
 
         </LinearLayout>
 
@@ -167,17 +155,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:text="@string/five"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
 
-            <ToggleButton
-                android:id="@+id/toggleButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:text="@string/tog5"
-                android:textColorLink="@color/colorPrimary"
-                android:textOff="@string/togo5"
-                android:textOn="@string/tog5"/>
+            <Switch
+                android:id="@+id/switch5"
+                android:layout_width="75dp"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:switchMinWidth="60dp"/>
 
         </LinearLayout>
 
@@ -194,17 +179,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:text="@string/six"
-                android:textColor="@color/colorAccent"/>
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"/>
 
-            <ToggleButton
-                android:id="@+id/toggleButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:text="@string/tog6"
-                android:textColorLink="@color/colorPrimary"
-                android:textOff="@string/togo6"
-                android:textOn="@string/tog6"/>
+            <Switch
+                android:id="@+id/switch6"
+                android:layout_width="75dp"
+                android:layout_height="@android:dimen/app_icon_size"
+                android:switchMinWidth="60dp"/>
 
         </LinearLayout>
 

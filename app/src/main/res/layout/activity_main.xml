@@ -10,62 +10,29 @@
     tools:context="activity.LoginGUI">
 
 
-    <LinearLayout
-        android:id="@+id/email_login_form"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="407dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/socketpowerlogo"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <Button
+        android:id="@+id/email_sign_in_button"
+        style="?android:textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="0dp">
-
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="@color/colorPrimary"
-            app:srcCompat="@android:drawable/editbox_background_normal"/>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp"/>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/username_input_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hidden_username_text"/>
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/password_input_text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hidden_password_text"/>
-
-        </android.support.design.widget.TextInputLayout>
-
-        <Button
-            android:id="@+id/email_sign_in_button"
-            style="?android:textAppearanceSmall"
-            android:layout_width="133dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="@string/action_sign_in_short"
-            android:textAlignment="center"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"/>
-
-    </LinearLayout>
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/getStarted"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
 
 </LinearLayout>
 

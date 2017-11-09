@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.ToggleButton;
 
 import com.example.christian.socketpowerandroid.R;
@@ -39,12 +40,12 @@ public class PowerstripGUI extends AppCompatActivity {
 //        outlets = client.getDevices().get(0).getOutlets();
 
 
-        ToggleButton button1 = findViewById(R.id.toggleButton1);
-        ToggleButton button2 = findViewById(R.id.toggleButton2);
-        ToggleButton button3 = findViewById(R.id.toggleButton3);
-        ToggleButton button4 = findViewById(R.id.toggleButton4);
-        ToggleButton button5 = findViewById(R.id.toggleButton5);
-        ToggleButton button6 = findViewById(R.id.toggleButton6);
+        Switch button1 = findViewById(R.id.switch1);
+        Switch button2 = findViewById(R.id.switch2);
+        Switch button3 = findViewById(R.id.switch3);
+        Switch button4 = findViewById(R.id.switch4);
+        Switch button5 = findViewById(R.id.switch5);
+        Switch button6 = findViewById(R.id.switch6);
 
         button1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -111,12 +112,5 @@ public class PowerstripGUI extends AppCompatActivity {
 
 
 
-    private void goToNextActivity(int animationIn, int animationOut) {
-        Intent intent = new Intent(context, SelectDeviceGUI.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(intent);
-        overridePendingTransition(animationIn, animationOut);
-    }
 
 }

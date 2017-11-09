@@ -191,11 +191,8 @@ public class PowerstripGUI extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 {
-
                     promptSpeechInput();
 
-                    Snackbar.make(view, "Hello Brannon", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
                 }
             }
         });

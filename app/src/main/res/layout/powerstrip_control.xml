@@ -66,7 +66,8 @@
                 android:id="@+id/switch1"
                 android:layout_width="75dp"
                 android:layout_height="@android:dimen/app_icon_size"
-                android:switchMinWidth="60dp"/>
+                android:switchMinWidth="60dp"
+              />
 
         </LinearLayout>
 
@@ -193,5 +194,15 @@
 
     </LinearLayout>
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:editable="false"
+        android:visibility="invisible"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
 </RelativeLayout>

@@ -21,7 +21,7 @@ public class LoginGUI extends AppCompatActivity implements View.OnClickListener{
     }
 
     public void initializeViews() {
-        Button login_button = findViewById(R.id.email_sign_in_button);
+        Button login_button = findViewById(R.id.start_button);
         login_button.setOnClickListener(this);
     }
 
@@ -37,7 +37,7 @@ public class LoginGUI extends AppCompatActivity implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         //if view is equal to the button
-        if (v.getId() == R.id.email_sign_in_button) {
+        if (v.getId() == R.id.start_button) {
             //username and password validation
 
             //transition to next activity

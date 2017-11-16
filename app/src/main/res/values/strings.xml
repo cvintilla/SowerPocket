@@ -4,6 +4,20 @@
     <string name="hidden_username_text">Username</string>
     <string name="hidden_password_text">Password</string>
 
+    <string name="string1On">Turning on outlet one</string>
+    <string name="string2On">Turning on outlet two</string>
+    <string name="string3On">Turning on outlet three</string>
+    <string name="string4On">Turning on outlet four</string>
+    <string name="string5On">Turning on outlet five</string>
+    <string name="string6On">Turning on outlet six</string>
+
+    <string name="string1Off">Turning off outlet one</string>
+    <string name="string2Off">Turning off outlet two</string>
+    <string name="string3Off">Turning off outlet three</string>
+    <string name="string4Off">Turning off outlet four</string>
+    <string name="string5Off">Turning off outlet five</string>
+    <string name="string6Off">Turning off outlet six</string>
+
     <string name="title">Sockets</string>
     <string name="tog1">ON</string>
     <string name="tog2">ON</string>
@@ -47,6 +61,8 @@
     <string name="select_device_header"/>
     <string name="select_dev_img"/>
     <string name="login_header">Welcome To Socket Power</string>
+
+
 
     <string name = "sampleClient">{\"client_id\":1,\"firstname\":\"John\",\"lastname\":\"Smith\",\"email\":\"comeatmebro@sample.com\",\"username\":\"dudebro64\",\"password\":\"password\",\"date_of_birth\":\"1911-11-11\",\"phonenumber\":1112223333,\"devices\":[{\"device_id\":\"460028000751353530373132\",\"access_token\":\"9753c88bb2723d4a882497bc80627a62270cb683\",\"outlets\":[{\"outlet_id\":1,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":2,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":3,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":4,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":5,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"},{\"outlet_id\":6,\"outlet_status\":false,\"device_id\":\"460028000751353530373132\"}]}]}</string>
 

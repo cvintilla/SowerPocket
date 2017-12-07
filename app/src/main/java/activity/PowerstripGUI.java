@@ -18,6 +18,8 @@ import android.widget.ToggleButton;
 
 import com.example.christian.socketpowerandroid.R;
 
+import org.w3c.dom.Text;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +60,7 @@ public class PowerstripGUI extends AppCompatActivity {
     private String string5Off;
     private String string6Off;
 
+    private TextEngine textEngine;
     private List<String> stringList;
 
     Context context;
@@ -71,6 +74,7 @@ public class PowerstripGUI extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         context = PowerstripGUI.this;
         setContentView(R.layout.powerstrip_control);
+
 
         switchList = new ArrayList<>();
         fc = new FormatConversion();
@@ -94,19 +98,19 @@ public class PowerstripGUI extends AppCompatActivity {
         switchList.add(button6);
 
 
-        string1 = ("Turning On Outlet One.");
-        string2 = ("Turning On Outlet two.");
-        string3 = ("Turning On Outlet three.");
-        string4 = ("Turning On Outlet four.");
-        string5 = ("Turning On Outlet five.");
-        string6 = ("Turning On Outlet six, Mr. Za levski.");
+        string1 = ("Outlet one on.");
+        string2 = ("Outlet two on.");
+        string3 = ("Outlet three on.");
+        string4 = ("Outlet four on.");
+        string5 = ("Outlet five on.");
+        string6 = ("Outlet six on.");
 
-        string1Off = ("Turning off Outlet One.");
-        string2Off = ("Turning off Outlet two.");
-        string3Off = ("Turning off Outlet three.");
-        string4Off = ("Turning off Outlet four.");
-        string5Off = ("Turning off Outlet five.");
-        string6Off = ("Turning off Outlet six, Mr. Za levski.");
+        string1Off = ("Outlet One off");
+        string2Off = ("Outlet two off");
+        string3Off = ("Outlet three off");
+        string4Off = ("Outlet four off");
+        string5Off = ("Outlet five off");
+        string6Off = ("Outlet six off");
 
 
         editText = findViewById(R.id.editText);
@@ -120,6 +124,7 @@ public class PowerstripGUI extends AppCompatActivity {
                 }
             }
         });
+
 
         button1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
